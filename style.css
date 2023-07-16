@@ -15,7 +15,7 @@ body {
     background-color: rgb(244, 233, 255);
 }
 
-#loading-video{
+#loading-video {
     position: fixed;
     z-index: 1;
 }

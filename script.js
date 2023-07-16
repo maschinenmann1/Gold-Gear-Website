@@ -1,11 +1,17 @@
 const TIME_DELAY = 3000
 
 function onLoad() {
+    setAudioVolume()
     setTimeout(function () {
         activateScroll()
         playMainVideo()
         stopLoadingVideo()
     }, TIME_DELAY);
+}
+
+function setAudioVolume() {
+    var mainAudio = document.getElementById("main-audio");
+    mainAudio.volume = 0.3;
 }
 
 function activateScroll() {
