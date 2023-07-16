@@ -1,0 +1,58 @@
+html {
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    overflow-y: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(244, 233, 255);
+}
+
+#loading-video{
+    position: fixed;
+    z-index: 1;
+}
+
+#main-video {
+    z-index: -1;
+    visibility: hidden;
+}
+
+.fullscreen-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#more-info-button {
+    width: 100vw;
+    height: 20vh;
+    text-align: center;
+    border: none;
+    font-size: 1.5rem;
+    background-color: white;
+}
+
+#more-info-button:hover {
+    transition: background-color 2s;
+    transition: color 1s;
+    color: #dce9f5;
+    background-color: black;
+}
+
+#body-container {
+    width: 70%;
+    display: block;
+    margin: auto;
+}
