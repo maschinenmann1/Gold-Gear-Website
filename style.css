@@ -1,3 +1,19 @@
+/* ITC Avant Garde Gothic Pro Medium */
+@font-face {
+    font-family: 'ITC_Avant_Garde_Gothic_Pro_Medium';
+    src: url('./assets/fonts/ITC_Avant_Garde_Gothic_PRO_Font_Family/ITC_Avant_Garde_Gothic_Pro-Medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ITC Avant Garde Gothic Pro Book */
+@font-face {
+    font-family: 'ITC_Avant_Garde_Gothic_Pro_Book';
+    src: url('./assets/fonts/ITC_Avant_Garde_Gothic_PRO_Font_Family/ITC_Avant_Garde_Gothic_Pro-Book.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html {
     scroll-behavior: smooth;
     -ms-overflow-style: none;
@@ -8,21 +24,59 @@ html::-webkit-scrollbar {
     display: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+sub {
+    font-family: 'ITC_Avant_Garde_Gothic_Pro_Medium' !important;
+}
+
+p {
+    margin-top: 0;
+}
+
+p,
+a,
+button,
+table {
+    font-family: 'ITC_Avant_Garde_Gothic_Pro_Book' !important;
+}
+
 body {
     overflow-y: hidden;
     margin: 0;
     padding: 0;
-    background-color: rgb(244, 233, 255);
+    background: linear-gradient(to bottom, #ea327c 0%, #f14695 100%);
+}
+
+.desktop {
+    display: block;
+}
+
+.phone {
+    display: none;
+}
+
+.white {
+    color: white;
 }
 
 #loading-video {
     position: fixed;
-    z-index: 1;
+    z-index: 10;
 }
 
-#main-video {
+.main-video {
     z-index: -1;
     visibility: hidden;
+}
+
+#logo {
+    left: 100px;
+    top: 100px;
+    position: absolute;
+    transform: rotate(-10deg);
 }
 
 .fullscreen-video {
@@ -38,21 +92,191 @@ body {
 #more-info-button {
     width: 100vw;
     height: 20vh;
+    padding: 0;
     text-align: center;
     border: none;
     font-size: 1.5rem;
+    text-transform: uppercase;
+    outline: none;
+    overflow: hidden;
+    cursor: pointer;
     background-color: white;
+    transform: translateY(-5px);
+    color: black;
 }
 
 #more-info-button:hover {
-    transition: background-color 2s;
-    transition: color 1s;
-    color: #dce9f5;
-    background-color: black;
+    transition: background-color 1s;
+    background-color: #FDF0AF;
+
 }
 
 #body-container {
-    width: 70%;
     display: block;
     margin: auto;
+}
+
+#image-area {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    z-index: -1;
+}
+
+#left-column {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    top: 70px;
+}
+
+#right-column {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.image {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: min-content;
+    height: min-content;
+}
+
+.title {
+    z-index: 2;
+    position: relative;
+    font-size: 12rem;
+    margin-bottom: 2px;
+    transition: all 2s;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+#game-info-section {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 10rem;
+}
+
+#characters-section h2 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+#characters-section h3 {
+    margin: 10px;
+    margin-left: 12px;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+#characters-section h4 {
+    margin: 10px;
+    margin-left: 12px;
+    margin-bottom: 0px;
+    font-size: 1.2rem;
+}
+
+#characters-section>div {
+    color: #f14695;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.character-info-left {
+    width: 60%;
+    padding: 25px;
+}
+
+.character-info-left img{
+    width: 100%;
+}
+
+.character-info-content {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+table {
+    border-spacing: 12px;
+}
+
+td {
+    border-bottom: 1px solid white;
+}
+
+.charecter-data {
+    width: 30%;
+}
+
+.character-text {
+    width: 69%;
+}
+
+.character-info-right {
+    width: 40%;
+}
+
+/*
+* FOOTER
+*/
+
+footer {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+footer p {
+    text-align: center;
+    margin: 0;
+    padding: 15px;
+}
+
+footer a {
+    color: #f14695;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ea327c;
+}
+
+footer a:active {
+    color: #ea327c;
+}
+
+/*
+* 
+* MEDIA QUERIES
+*
+*/
+
+@media only screen and (max-width: 1100px) {
+    #logo {
+        width: 470px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    #logo {
+        left: 50px;
+        top: 50px;
+        width: 200px;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .phone {
+        display: block;
+    }
 }

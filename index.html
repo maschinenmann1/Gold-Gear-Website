@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TFG - Chigito</title>
-    <link rel="icon" type="image/x-icon" href="./assets/favicon/favicon.jpg">
+    <title>Gold Gear</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,90 +14,325 @@
 </head>
 
 <body id="main-body" onload="onLoad()">
-    <audio autoplay id="main-audio">
-        <source src="./assets/audios/bgm-astrogirl.mp3" type="audio/mp3">
-        <!--arranged by halords-->
-    </audio>
     <header>
         <video id="loading-video" class="fullscreen-video" autoplay muted>
             <source src="./assets/videos/loading-video.webm" type="video/webm">
         </video>
-        <video id="main-video" class="fullscreen-video" loop muted>
+        <video id="main-video" class="main-video fullscreen-video desktop" loop muted>
             <source src="./assets/videos/main-video.webm" type="video/webm">
         </video>
-        <a href="https://www.youtube.com/watch?v=AhtJ3oRqkLM">
-            <button id="more-info-button">PLAY TRAILER <i class="fa-solid fa-arrow-right"></i></button>
+        <video id="main-video" class="main-video fullscreen-video phone" loop muted>
+            <source src="./assets/videos/main-video-phone.webm" type="video/webm">
+        </video>
+        <img id="logo" src="assets/images/logo.png" alt="logo" width="600px">
+        <a href="https://www.youtube.com/watch?v=khplMpm4ctc&list=RDkrRNjUJIfFk&index=4">
+            <button id="more-info-button">VER TRAILER <i class="fa-solid fa-arrow-right"></i>
+            </button>
         </a>
     </header>
+
     <div id="body-container">
-        <h1>TFG CHIGITO</h1>
-        <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum consequuntur aspernatur quidem
-                optio at, velit magnam similique assumenda aliquid eveniet beatae nobis aperiam quaerat, voluptate autem
-                tempore quibusdam! Nihil!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, veniam. Quaerat dignissimos ipsum minus
-                adipisci, quo soluta doloribus consequuntur molestias? Eius impedit excepturi qui culpa illo quisquam
-                inventore ipsam repudiandae!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis atque amet sit, velit quas accusamus?
-                Repellendus dignissimos asperiores inventore, quasi repudiandae nobis tenetur illo reprehenderit modi
-                officia impedit harum cum?
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum tempora labore eaque, odit quas
-                nulla dolorum earum ipsum, minima delectus amet dolore commodi consequuntur, ab dolores explicabo?
-                Perspiciatis, quis adipisci.
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, eligendi nisi ducimus reiciendis totam
-                tenetur laborum pariatur? Ea similique velit facere nihil veniam neque voluptatibus possimus! Ipsam
-                veniam tempora voluptas.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, sequi eligendi, obcaecati culpa voluptas
-                doloribus illum eaque labore quod odit dicta consequatur deleniti corporis porro ab earum vel adipisci
-                enim? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat minus esse sapiente possimus non
-                temporibus recusandae voluptatibus blanditiis ullam, commodi quidem labore vel animi hic accusamus,
-                earum rem! Voluptates, excepturi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis,
-                a ex, aliquid id laudantium placeat, sunt officia nesciunt praesentium accusantium quaerat laboriosam
-                amet minus. Adipisci fugit commodi illum quia vel. Lorem ipsum, dolor sit amet consectetur adipisicing
-                elit. Qui consectetur illo, iusto accusantium nihil ipsam tempora optio provident hic excepturi est
-                debitis? Magni deserunt quod autem ratione eum harum error. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Nesciunt, vitae. Odio explicabo hic modi magnam, voluptatum esse quas sapiente, quam
-                minima neque atque dolor dignissimos repudiandae quo tempore quisquam sint. Lorem, ipsum dolor sit amet
-                consectetur adipisicing elit. Veritatis id, odio dolorem blanditiis eius, unde vel hic cum nesciunt
-                officiis laborum? Eum inventore laboriosam excepturi eius autem numquam facere dignissimos! Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Esse, earum maxime alias nostrum harum rem labore sapiente
-                facilis! Dignissimos facilis sunt ipsum repellat, at eligendi magnam dolore! Animi, sed iure.</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore laudantium ducimus earum fuga aut et
-                ullam autem placeat. Odit quasi incidunt qui, sapiente laborum molestias nobis soluta optio illo et.
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet animi similique, saepe soluta assumenda
-                eveniet dicta minima doloremque voluptatibus. Ab recusandae vitae cupiditate aliquid perferendis,
-                corporis officia placeat voluptates cum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
-                iure laborum dolorem enim temporibus repellendus distinctio, ducimus a placeat eaque maiores nihil qui,
-                necessitatibus odit ea sit est expedita tenetur! Lorem ipsum, dolor sit amet consectetur adipisicing
-                elit. Voluptatibus ipsam similique, dicta obcaecati aliquid nulla ab ducimus vel quis nesciunt facere
-                sunt perferendis aspernatur, nobis delectus doloribus assumenda, qui praesentium! Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Voluptatum necessitatibus iure perferendis dicta, excepturi iste id
-                libero at nostrum quam quod architecto unde. Sunt, itaque quisquam! Sapiente dolore placeat deserunt!
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum provident, beatae tempore non ipsam nihil
-                at dignissimos veritatis laboriosam dolor deleniti inventore aliquam neque laudantium dolore aperiam
-                suscipit debitis tempora! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cumque ratione
-                eius iure voluptatem culpa a ex aut nemo eligendi, quidem accusantium corporis dignissimos incidunt ea?
-                Dicta animi repellendus quasi? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit animi
-                aliquid ab illum quam, sint deserunt voluptate possimus nihil error corrupti non dicta nisi, ea et
-                quisquam sunt ipsa suscipit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem,
-                itaque molestias odit quisquam, vitae tempore velit error numquam magni aliquid rem repellendus maxime
-                minima ipsum dolor voluptas inventore beatae distinctio. Lorem ipsum, dolor sit amet consectetur
-                adipisicing elit. Soluta voluptatum dolores, odit iste expedita ratione tenetur temporibus eveniet
-                maxime a sunt, beatae accusamus itaque optio nesciunt. Est temporibus odio nisi. Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Sed a deleniti assumenda molestiae inventore temporibus doloremque
-                esse sunt mollitia animi! Voluptatem possimus perferendis tempora iure! Corrupti libero neque saepe
-                accusamus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum aperiam asperiores ipsa
-                labore eveniet, at fuga quos maxime adipisci quidem! Natus non dolores debitis dolor magnam omnis
-                quaerat saepe culpa? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid provident dolorem
-                facilis voluptates illo, sint, repudiandae rem totam ipsum voluptatibus maxime eum adipisci ut quo? Quia
-                velit esse aut natus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut laboriosam dicta
-                facilis tempora repellendus minus doloremque natus in provident voluptatem cum mollitia similique
-                recusandae, tempore magni ullam neque? Illo, provident.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi dicta repellendus odit facilis temporibus
-                neque, nostrum sed! Nulla inventore fuga sunt, neque odio quaerat, minima eum, deleniti voluptates
-                aspernatur sint!</p>
+        <div id="game-info-section">
+            <h2>Memento?</h2>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum consequuntur aspernatur
+                    quidem
+                    optio at, velit magnam similique assumenda aliquid eveniet beatae nobis aperiam quaerat, voluptate
+                    autem
+                    tempore quibusdam! Nihil!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, veniam. Quaerat dignissimos ipsum
+                    minus
+                    adipisci, quo soluta doloribus consequuntur molestias? Eius impedit excepturi qui culpa illo
+                    quisquam
+                    inventore ipsam repudiandae!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis atque amet sit, velit quas accusamus?
+                    Repellendus dignissimos asperiores inventore, quasi repudiandae nobis tenetur illo reprehenderit
+                    modi
+                    officia impedit harum cum?
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum tempora labore eaque, odit quas
+                    nulla dolorum earum ipsum, minima delectus amet dolore commodi consequuntur, ab dolores explicabo?
+                    Perspiciatis, quis adipisci.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, eligendi nisi ducimus reiciendis totam
+                    tenetur laborum pariatur? Ea similique velit facere nihil veniam neque voluptatibus possimus! Ipsam
+                    veniam tempora voluptas.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, sequi eligendi, obcaecati culpa
+                    voluptas
+                    doloribus illum eaque labore quod odit dicta consequatur deleniti corporis porro ab earum vel
+                    adipisci
+                    enim? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat minus esse sapiente possimus
+                    non
+                    temporibus recusandae voluptatibus blanditiis ullam, commodi quidem labore vel animi hic accusamus,
+                    earum rem! Voluptates, excepturi! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Perferendis,
+                    a ex, aliquid id laudantium placeat, sunt officia nesciunt praesentium accusantium quaerat
+                    laboriosam
+                    amet minus. Adipisci fugit commodi illum quia vel. Lorem ipsum, dolor sit amet consectetur
+                    adipisicing
+                    elit. Qui consectetur illo, iusto accusantium nihil ipsam tempora optio provident hic excepturi est
+                    debitis? Magni deserunt quod autem ratione eum harum error. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Nesciunt, vitae. Odio explicabo hic modi magnam, voluptatum esse quas sapiente,
+                    quam
+                    minima neque atque dolor dignissimos repudiandae quo tempore quisquam sint. Lorem, ipsum dolor sit
+                    amet
+                    consectetur adipisicing elit. Veritatis id, odio dolorem blanditiis eius, unde vel hic cum nesciunt
+                    officiis laborum? Eum inventore laboriosam excepturi eius autem numquam facere dignissimos! Lorem
+                    ipsum
+                    dolor sit amet consectetur adipisicing elit. Esse, earum maxime alias nostrum harum rem labore
+                    sapiente
+                    facilis! Dignissimos facilis sunt ipsum repellat, at eligendi magnam dolore! Animi, sed iure.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore laudantium ducimus earum fuga aut et
+                    ullam autem placeat. Odit quasi incidunt qui, sapiente laborum molestias nobis soluta optio illo et.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet animi similique, saepe soluta
+                    assumenda
+                    eveniet dicta minima doloremque voluptatibus. Ab recusandae vitae cupiditate aliquid perferendis,
+                    corporis officia placeat voluptates cum. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Ex
+                    iure laborum dolorem enim temporibus repellendus distinctio, ducimus a placeat eaque maiores nihil
+                    qui,
+                    necessitatibus odit ea sit est expedita tenetur! Lorem ipsum, dolor sit amet consectetur adipisicing
+                    elit. Voluptatibus ipsam similique, dicta obcaecati aliquid nulla ab ducimus vel quis nesciunt
+                    facere
+                    sunt perferendis aspernatur, nobis delectus doloribus assumenda, qui praesentium! Lorem ipsum dolor
+                    sit
+                    amet consectetur adipisicing elit. Voluptatum necessitatibus iure perferendis dicta, excepturi iste
+                    id
+                    libero at nostrum quam quod architecto unde. Sunt, itaque quisquam! Sapiente dolore placeat
+                    deserunt!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum provident, beatae tempore non ipsam
+                    nihil
+                    at dignissimos veritatis laboriosam dolor deleniti inventore aliquam neque laudantium dolore aperiam
+                    suscipit debitis tempora! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cumque
+                    ratione
+                    eius iure voluptatem culpa a ex aut nemo eligendi, quidem accusantium corporis dignissimos incidunt
+                    ea?
+                    Dicta animi repellendus quasi? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit animi
+                    aliquid ab illum quam, sint deserunt voluptate possimus nihil error corrupti non dicta nisi, ea et
+                    quisquam sunt ipsa suscipit? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Exercitationem,
+                    itaque molestias odit quisquam, vitae tempore velit error numquam magni aliquid rem repellendus
+                    maxime
+                    minima ipsum dolor voluptas inventore beatae distinctio. Lorem ipsum, dolor sit amet consectetur
+                    adipisicing elit. Soluta voluptatum dolores, odit iste expedita ratione tenetur temporibus eveniet
+                    maxime a sunt, beatae accusamus itaque optio nesciunt. Est temporibus odio nisi. Lorem ipsum dolor
+                    sit
+                    amet consectetur adipisicing elit. Sed a deleniti assumenda molestiae inventore temporibus
+                    doloremque
+                    esse sunt mollitia animi! Voluptatem possimus perferendis tempora iure! Corrupti libero neque saepe
+                    accusamus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum aperiam asperiores ipsa
+                    labore eveniet, at fuga quos maxime adipisci quidem! Natus non dolores debitis dolor magnam omnis
+                    quaerat saepe culpa? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid provident
+                    dolorem
+                    facilis voluptates illo, sint, repudiandae rem totam ipsum voluptatibus maxime eum adipisci ut quo?
+                    Quia
+                    velit esse aut natus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut laboriosam dicta
+                    facilis tempora repellendus minus doloremque natus in provident voluptatem cum mollitia similique
+                    recusandae, tempore magni ullam neque? Illo, provident.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi dicta repellendus odit facilis
+                    temporibus
+                    neque, nostrum sed! Nulla inventore fuga sunt, neque odio quaerat, minima eum, deleniti voluptates
+                    aspernatur sint!</p>
+            </div>
+        </div>
+        <div id="characters-section">
+            <h2>Personajes</h2>
+            <div>
+                <div class="character-info-left">
+                    <h3>LEELIEL<br>VERMILION_</h3>
+                    <h4>FICHA TÉCNICA</h4>
+                    <div class="character-info-content">
+                        <div class="charecter-data white">
+                            <table>
+                                <tr>
+                                    <td>Sexo</td>
+                                    <td>Femenino</td>
+                                </tr>
+                                <tr>
+                                    <td>Edad</td>
+                                    <td>80 años</td>
+                                </tr>
+                                <tr>
+                                    <td>Cumpleaños</td>
+                                    <td>14 de Agosto</td>
+                                </tr>
+                                <tr>
+                                    <td>Altura</td>
+                                    <td>1,82 m</td>
+                                </tr>
+                                <tr>
+                                    <td>Peso</td>
+                                    <td>81 Kg</td>
+                                </tr>
+                                <tr>
+                                    <td>Tipo de sangre</td>
+                                    <td>A+</td>
+                                </tr>
+                                <tr>
+                                    <td>Le gusta</td>
+                                    <td>El vino</td>
+                                </tr>
+                                <tr>
+                                    <td>No le gusta</td>
+                                    <td>La politica</td>
+                                </tr>
+                                <tr>
+                                    <td>Talento</td>
+                                    <td>Tocar el piano</td>
+                                </tr>
+                                <tr>
+                                    <td>Mania</td>
+                                    <td>La simetria</td>
+                                </tr>
+                                <tr>
+                                    <td>Pasatiempo</td>
+                                    <td>Leer libros</td>
+                                </tr>
+                                <tr>
+                                    <td>Gear</td>
+                                    <td>Su poder es poder controlar el vino, pudiendo moverlo y multiplicarlo en el
+                                        espacio del combate a su gusto.</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="character-text white">
+                            <p>Para Leeliel, mi mayor prioridad fue transmitir el peso de los años. Por ello, decidí
+                                usar muchas
+                                formas alargadas, que además me ayudarían a crear un diseño imponente.</p>
+                            <p>Tanto el pelo, recogido pero suelto por delante mostrando un largo cabello, como la larga
+                                túnica negra, las cintas de los brazos y sus uñas, dan una sensación de extensión, que
+                                junto
+                                con su expresión apática pero confiada permiten imaginar la personalidad de Leeliel.
+                            </p>
+                            <p>Su túnica negra tiene unas terminaciones similares al fuego, dando una imagen casi
+                                espiritual
+                                y oscura de Leeliel, lo que se acentúa con las plumas negras a su cuello, recordando
+                                todo
+                                este traje a un cuervo.
+                            </p>
+                            <p>Estos atributos contrastan con el diseño de sus ojos, que muestran una mirada alegre y
+                                esperanzadora, acentuada por el diseño de flor de sus pupilas y los colores pastel
+                                usados en
+                                estas. Estos ojos son tapados por sus gafas con lentes negras, pero sin preocuparse
+                                demasiado por taparlos en su totalidad, mostrando la imagen que quiere dar a los demás
+                                pero a su
+                                vez demostrando que no le importa demasiado mantener esta aparencia.</p>
+                            <p>Es importante destacar que Leeliel ve su edad como una ventaja, ya que le aporta mucho
+                                conocimiento y le permite ser mejor que en el pasado. Por ello su Gear es el vino, ya
+                                que
+                                este se clasifica por su edad, siendo el de más calidad el más antiguo.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- <img src="./assets/images/Leeliel_square.png" alt="leeliel" width="70%"> -->
+                </div>
+                <div class="character-info-right">
+                    <img src="./assets/images/Leeliel Vermilion transparente.png" alt="LEELIEL VERMILION_"
+                        width="1000px">
+                </div>
+            </div>
+            <div>
+                <div class="character-info-left">
+                    <h3>VELÓNICA</h3>
+                    <h4>FICHA TÉCNICA</h4>
+                    <div class="character-info-content">
+                        <div class="charecter-data white">
+                            <table>
+                                <tr>
+                                    <td>Sexo</td>
+                                    <td>Femenino</td>
+                                </tr>
+                                <tr>
+                                    <td>Edad</td>
+                                    <td>23 años</td>
+                                </tr>
+                                <tr>
+                                    <td>Cumpleaños</td>
+                                    <td>27 de Junioo</td>
+                                </tr>
+                                <tr>
+                                    <td>Altura</td>
+                                    <td>1,85 m</td>
+                                </tr>
+                                <tr>
+                                    <td>Peso</td>
+                                    <td>74 Kg</td>
+                                </tr>
+                                <tr>
+                                    <td>Tipo de sangre</td>
+                                    <td>0-</td>
+                                </tr>
+                                <tr>
+                                    <td>Le gusta</td>
+                                    <td>Comer limones</td>
+                                </tr>
+                                <tr>
+                                    <td>No le gusta</td>
+                                    <td>El dulce</td>
+                                </tr>
+                                <tr>
+                                    <td>Talento</td>
+                                    <td>Hacer cubos de Rubik</td>
+                                </tr>
+                                <tr>
+                                    <td>Mania</td>
+                                    <td>No poner la espalda recta</td>
+                                </tr>
+                                <tr>
+                                    <td>Pasatiempo</td>
+                                    <td>Pelear</td>
+                                </tr>
+                                <tr>
+                                    <td>Gear</td>
+                                    <td>Su poder tiene que ver
+                                        con las explosiones. Puede
+                                        crear unas pequeñas bolas
+                                        naranjas que al romperlas
+                                        generan una explosión
+                                        cuyo daño no le afecta.</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="character-text white">
+                            <p>Velónica tiene una personalidad calmada, pero que en algunas situaciones se vuelve
+                                explosiva. Para transmitir esto, he tratado de componer su diseño usando triángulos,
+                                como se
+                                puede ver en el pelo, los dientes o los patrones de la ropa.</p>
+                            <p>Su expresión y pose transmiten sinceridad y calma, mostrándose tal y cómo es, lo que se
+                                acentúa con el uso de colores grisáceos en todo el diseño. El pelo es puntiagudo,
+                                mostrando
+                                su parte explosiva, pero sin dejar de estar caído y descuidado. Este ayuda mucho a hacer
+                                reconocible su silueta y de transmitir la indiferencia que la caracteriza.
+                            </p>
+                            <p>La parte que más destaca de su ropa es su gabardina, que por fuera tiene un toque crema
+                                verde y por dentro un patrón que complementa su diseño y aporta personalidad. También
+                                destacaría la boina, que complementa con el resto de la ropa
+                            </p>
+                            <p>Velónica tiene una gran quemadura en la cara por un combate pasado que afectó a su ojo
+                                izquierdo, por lo que usa un parche para taparlo. Este parche lo tiene mal puesto, ya
+                                que
+                                la goma atraviesa su cara de arriba a debajo, lo que sirve para demostrar su
+                                personalidad
+                                despreocupada.</p>
+                            <p>Su poder es el de generar explosiones, lo que hace referencia a sus bruscos cambios de
+                                humor. Se apoya de su espada para usar este poder, ya que puede situar las pequeñas
+                                pelotas
+                                naranjas en la hoja de la espada y mediante un mecanismo romperlas al atacar.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- <img src="./assets/images/Leeliel_square.png" alt="leeliel" width="70%"> -->
+                </div>
+                <div class="character-info-right">
+                    <img src="./assets/images/Velonica transparente.png" alt="VELÓNICA"
+                        width="1000px">
+                </div>
+            </div>
         </div>
     </div>
+    <footer>
+        <p>Websiete created by: <a href="https://maschinenmann1.github.io/maschinenmann/">Maschinenmann</a></p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js"
+        integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
         integrity="sha512-HaoDYc3PGduguBWOSToNc0AWGHBi2Y432Ssp3wNIdlOzrunCtB2qq6FrhtPbo+PlbvRbyi86dr5VQx61eg/daQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
